@@ -1,5 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
+Other libraries I used included:
+- [React Virtualized](https://github.com/bvaughn/react-virtualized) - For efficicient rendering of large datasets
+- [Axios](https://www.npmjs.com/package/axios) - For Promise-based xmlHttpRequests
+- [React Bootstrap](https://react-bootstrap.github.io) - For Bootstrap components in React (I ended up barely using this)
+- [jQuery](https://www.npmjs.com/package/jquery) - For dynamic DOM manipulation (Normally I wouldn't use jQuery with React, but the assessment wanted me to demonstrate some jQuery).
+
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
