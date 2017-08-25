@@ -12,17 +12,27 @@ import { FormGroup, FormControl, Button, InputGroup } from 'react-bootstrap';
  */
  const ConfigList = (props) => {
   /*
+   * Get the amount of vertical space left on the screen. We would prefer to fit the table exactly in that space so that there
+   * is only 1 scroll bar. 150px is the min height for the table though.
+   */ 
+   let verticalSpace = $(window).height() - 300;
+   if (verticalSpace < 140) {
+      verticalSpace = 140;
+   }
+   console.log("visible vertical space", verticalSpace);
+
+  /*
    * The content that is rendered for the ConfigList component. It uses the Table component from react-virtualized to render even
    * large datasets efficiently. Only rows that are visible at any given time are rendered. 
    * (See https://github.com/bvaughn/react-virtualized/blob/master/docs/Table.md for more info on how this works)
    */
   return (
     <div>
-      <AutoSizer disableHeight>
+      <AutoSizer>
         {({ width }) =>
         <Table
           width={width}
-          height={500}
+          height={verticalSpace}
           headerHeight={20}
           rowHeight={30}
           rowCount={props.configs.length}
@@ -60,7 +70,7 @@ import { FormGroup, FormControl, Button, InputGroup } from 'react-bootstrap';
 };
 
 /*
- * A component that will let a user toggle the font size of the application.
+ * A component that will let a user toggle the table headers between upper/lowercase.
  * (I implemented this to satisfy requirement #2 - Use jQuery to add some style and design 
  * to the previous code). When a user toggles the selection, I use jQuery to dynamically change
  * styling of the list.
@@ -186,12 +196,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="App-header">
+        <div className="App-header" id="appHeader">
           <h2>Tenable - Nessus UI Assessment</h2>
           <h3>Dylan Symington</h3>
         </div>
         <div className="App-main">
-          <div className="InputArea">
+          <div className="InputArea" id="inputArea">
             <div className="InputFieldLeft">
               <NumConfigurationInput onSubmit={this.updateConfigs} />
             </div>

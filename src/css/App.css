@@ -8,11 +8,11 @@
   background-image: linear-gradient(rgba(255,255,255,0.25),rgba(255,255,255,0.25)),url(http://www.tenable.com/sites/all/themes/tenablefourteen/img/17/home-hero-hex.jpg);
   background-position: center;
   background-size: cover;
-  padding: 20px;
+  padding: 15px;
   color: white;
   display: flex;
   flex-direction: column;
-  min-height: 120px;
+  min-height: 80px;
 }
 
 .App-header h2 {
@@ -26,7 +26,7 @@
 }
 
 .App-main {
-  max-width: 800px;
+  max-width: 1024px;
   margin: 0 auto;
 }
 /*
