@@ -1,5 +1,7 @@
-Live demo at https://somecoolguy.github.io/tenable-ui-assessment/ (Tested in Chrome on Windows 10). Enter a number in the "Number of hosts" textbox and submit it to see the list of configurations.
+Live demo at https://somecoolguy.github.io/tenable-ui-assessment/ (Tested in Chrome on Windows 10). 
+Enter a number in the "Number of hosts" textbox and submit it to see the list of configurations.
 
+## Libraries
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Other libraries I used included:
@@ -8,8 +10,7 @@ Other libraries I used included:
 - [React Bootstrap](https://react-bootstrap.github.io) - For Bootstrap components in React (I ended up barely using this)
 - [jQuery](https://www.npmjs.com/package/jquery) - For dynamic DOM manipulation (Normally I wouldn't use jQuery with React, but the assessment wanted me to demonstrate some jQuery).
 
-Below you will find some information on how to perform common tasks.<br>
-You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
+
 
 ## Installing locally
 If you'd like to run the project locally you can check it out of Github, navigate to the root folder, and execute the following commands.
