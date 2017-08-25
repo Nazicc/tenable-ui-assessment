@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { AutoSizer, Table, Column } from 'react-virtualized';
-import './App.css';
+import './css/App.css';
+import './css/ConfigTable.css';
 import axios from 'axios';
 import { simulateResponse } from './helpers';
 import $ from 'jquery';
