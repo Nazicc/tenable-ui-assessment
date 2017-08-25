@@ -1,0 +1,93 @@
+.App {
+  text-align: center;
+  font-family: "fira sans",system-ui,-apple-system,roboto,"segoe ui",sans-serif;
+
+}
+
+.App-header {
+  background-image: linear-gradient(rgba(255,255,255,0.25),rgba(255,255,255,0.25)),url(http://www.tenable.com/sites/all/themes/tenablefourteen/img/17/home-hero-hex.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 120px;
+}
+
+.App-header h2 {
+  color: #00a5b5;
+  font-size: 2em;
+}
+
+.App-header h3 {
+  color: #777779;
+  font-size: 1.3em;
+}
+
+/*
+ * CSS for the input section at the top of the application
+ */
+.InputArea {
+  padding: 15px;
+}
+
+.InputFieldLeft {
+  display: inline-block;
+  width: 50%;
+  text-align:left;
+}
+
+.InputFieldRight {
+  display: inline-block;
+  width: 50%;
+  text-align:right;
+}
+
+.InputArea input {
+  line-height: 30px;
+}
+
+.InputArea button {
+  line-height: 30px;
+}
+
+/* 
+ * Display radio buttons as a set of toggle-able buttons instead of a list of radio buttons.
+ */
+.InputArea input[type="radio"] {
+  position: absolute !important;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  width: 1px;
+  border: 0;
+  overflow: hidden;
+}
+
+.InputArea label {
+  display: inline-block;
+  width: 120px;
+  background-color: #e4e4e4;
+  color:  #A9A9A9;
+  line-height: 33px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.InputArea label:first-of-type {
+  border-radius: 5px 0 0 5px;
+}
+
+.InputArea label:last-of-type {
+  border-radius: 0 5px 5px 0;
+}
+
+.InputArea label:hover {
+  cursor: pointer;
+}
+
+.InputArea input[type="radio"]:checked+label {
+  background-color: #A9A9A9;
+  color: #000000;
+}
+
