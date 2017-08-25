@@ -25,6 +25,10 @@
   font-size: 1.3em;
 }
 
+.App-main {
+  max-width: 800px;
+  margin: 0 auto;
+}
 /*
  * CSS for the input section at the top of the application
  */
