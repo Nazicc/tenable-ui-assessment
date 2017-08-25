@@ -41,7 +41,7 @@ Then you will be able to access the project at localhost:3000.
 
 Write an HTML/JS code to send this request and display the result.
 
-```
+**
 - I wrote the request code within the handleSubmit function in the NumConfigurationInput component. Since the server doesn't actually exist it always fails, so within the catch clause I just simulate what a request would look like and pretend I got it from the server.
 - I also have a unit test in App.test.js that tests whether the response from the server is what is expected. (It always fails).
-```
+**
